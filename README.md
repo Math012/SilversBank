@@ -38,3 +38,19 @@ Inicialmente o projeto não segue nenhuma arquitetura de mercado como MVP ou MVV
 
 ![detalhes](https://user-images.githubusercontent.com/109437880/221371781-28083930-c0ac-4915-a45f-27f2191bfd4a.PNG)
 
+## Funcionalidades
+
+- Transferencia 
+
+   Transferencia tem como objetivo enviar uma certa quantidade de dinheiro para uma outra conta.
+   
+   Inicialmente a "Transferencia" não tem como base o saldo inicial do usuario.
+   
+   Para realizar uma transferencia o usuario precisa inserir um número de conta valído, caso o usuario insira uma conta invalida, um alerta avisando que a conta
+   informada não foi localizada via console.
+
+ ![transferencia](https://user-images.githubusercontent.com/109437880/221372269-cbe9f03d-85b8-4974-aae8-101a3e6d3d65.PNG)
+
+
+
+
