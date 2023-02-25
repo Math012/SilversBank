@@ -65,6 +65,11 @@ Inicialmente o projeto não segue nenhuma arquitetura de mercado como MVP ou MVV
  # Topicos abordados neste projeto
  
  - Adapter para RecyclerView( os dados foram inseridos manualmente)
-
-
-
+ - RoomDataBase para o armazenamento(Dao, @Entity, @Database, @Query)
+ - Intent para a comunicação entre activitys
+ - Validação de Login junto com o RoomDataBase
+ - Validação de cadastro junto com o RoomDataBase
+ - ViewBinding
+ - Funções
+ - POO(Interface, dataclass, class, companion object, etc..)
+ - Threads para a utilização do RoomDataBase
