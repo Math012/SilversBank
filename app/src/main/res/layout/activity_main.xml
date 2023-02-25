@@ -98,7 +98,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/background_button"
         android:fontFamily="@font/lexend_exa"
-        android:text="Cadastra-se"
+        android:text="Cadastre-se"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btLogin"
