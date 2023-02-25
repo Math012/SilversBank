@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.PayActivity">
+
+    <FrameLayout
+        android:id="@+id/frameDetailTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#9963C3"
+        android:foregroundGravity="bottom|center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:fontFamily="@font/lexend_exa"
+            android:gravity="center"
+            android:text="Pagamento"
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_exa"
+        android:text="Valor"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/frameDetailTransfer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:id="@+id/editValuePay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:hint="Valor"
+        android:inputType="number|numberDecimal"
+        android:selectAllOnFocus="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textValue" />
+
+    <TextView
+        android:id="@+id/textNumberPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_exa"
+        android:text="Número do boleto"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/editValuePay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/editNumberAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número do boleto"
+        android:inputType="number|numberDecimal"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/textNumberPay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btValuePay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button_detail"
+        android:fontFamily="@font/lexend_exa"
+        android:text="Pagar"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/editNumberAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="60dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

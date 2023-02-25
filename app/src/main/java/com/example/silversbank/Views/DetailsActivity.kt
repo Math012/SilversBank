@@ -28,14 +28,20 @@ class DetailsActivity : AppCompatActivity() {
 
         initAdapter()
         initListRecycler()
-
         val usernameReturn = intent.getStringExtra("username")!!
+
         Thread(Runnable {
             toViewUser(usernameReturn)
         }).start()
 
-        binding.btPay.setOnClickListener {
+        binding.btTransfer.setOnClickListener {
             intent = Intent(this, TransferActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btPay.setOnClickListener {
+            intent = Intent(this, PayActivity::class.java)
+            intent.putExtra("usernamePay", usernameReturn)
             startActivity(intent)
         }
 

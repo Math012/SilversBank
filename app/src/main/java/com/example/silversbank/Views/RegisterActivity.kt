@@ -44,15 +44,16 @@ class RegisterActivity : AppCompatActivity() {
         var balance = 1.453
 
         if (listOfUsers.contains(username)) {
-
+            println("Nome de usuario ja registrado")
         }else if (password != passwordVerify){
-
+            println("A senha informada não é semelhante")
         }else if (password.isEmpty() || password.isBlank()){
-
+            println("Por favor insira uma senha valida e sem espaços")
         }else if (username.isEmpty()|| username.isBlank()){
-
+            println("Por favor, insira um nome valido e sem espaços")
         }else{
             userDao.RegisterUser(User(username, password, balance, accNumber))
+            println("Usuario cadastrado")
         }
     }
 }
